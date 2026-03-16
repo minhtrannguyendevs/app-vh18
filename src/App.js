@@ -1,0 +1,51 @@
+// import logo from './logo.svg';
+// import './App.css';
+
+function App() {
+  return (
+    // <div className="App">
+    //   <header className="App-header">
+    //     <img src={logo} className="App-logo" alt="logo" />
+    //     <p>
+    //       Edit <code>src/App.js</code> and save to reload.
+    //     </p>
+    //     <a
+    //       className="App-link"
+    //       href="https://reactjs.org"
+    //       target="_blank"
+    //       rel="noopener noreferrer"
+    //     >
+    //       Learn React
+    //     </a>
+    //   </header>
+    // </div>
+
+
+    <>
+    <img src = "bg2.png" width = {400} height ={200}alt = "Background"/>
+    <h1>Hello World !!</h1>
+    <table bolder = {1}>
+      <tr>
+        <th>STT</th>
+        <th>MSV</th>
+        <th>Ho Va Ten</th>
+        <th>Diem</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>PH12345</td>
+        <td>Nguyen Van A</td>
+        <td>9.0</td>
+      </tr>
+      <tr> <td>2</td>
+        <td>PH12346</td>
+        <td>Nguyen Van B</td>
+        <td>8.0</td>  
+        </tr>
+         
+    </table>
+    </>
+  );
+}
+
+export default App;
