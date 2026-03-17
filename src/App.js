@@ -26,7 +26,7 @@ function App() {
     <List/>
     <hr/>
     <img src = "avt0.png" width = {400} height ={200}alt = "Background"/>
-    <h1>Hello World !!</h1>
+    <h1>Hello World!!</h1>
     <table bolder = {1}>
       <tr>
         <th>STT</th>
