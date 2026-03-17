@@ -22,15 +22,14 @@ function App() {
 
 
     <>
-    <img src = "bg2.png" width = {400} height ={200}alt = "Background"/>
+    <img src = "avt0.png" width = {400} height ={200}alt = "Background"/>
     <h1>Hello World !!</h1>
     <table bolder = {1}>
       <tr>
         <th>STT</th>
         <th>MSV</th>
         <th>Ho Va Ten</th>
-        <th>Diem</th>
-      </tr>
+        <th>Diem</th>      </tr>
       <tr>
         <td>1</td>
         <td>PH12345</td>
