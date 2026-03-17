@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 // import './App.css';
+import List from './components/List';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
 
 
     <>
+    <List/>
+    <hr/>
     <img src = "avt0.png" width = {400} height ={200}alt = "Background"/>
     <h1>Hello World !!</h1>
     <table bolder = {1}>
@@ -36,7 +39,8 @@ function App() {
         <td>Nguyen Van A</td>
         <td>9.0</td>
       </tr>
-      <tr> <td>2</td>
+      <tr> 
+        <td>2</td>
         <td>PH12346</td>
         <td>Nguyen Van B</td>
         <td>8.0</td>  
