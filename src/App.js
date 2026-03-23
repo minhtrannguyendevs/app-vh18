@@ -52,6 +52,7 @@
 // }
 
 // export default App;
+import Bai2 from './components/Bai2';
 import Gallery,{Profile,Profile2} from './components/Gallery';
 import Header from './components/Header';
 import { Container }   from 'react-bootstrap';
@@ -63,6 +64,8 @@ function App() {
     <>
     <Container>
       <Header/>
+      <Bai2/>
+      <Gallery/>
     </Container>
       
       {/* <Gallery/>
