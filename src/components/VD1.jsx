@@ -3,7 +3,7 @@ function VD1() {
   return (
     <>
       <h2>Day La VD1</h2>
-      <img src="image/image2.png" width={150} height={200} alt="Background" />
+      <img src="image/image2.jpg" width={250} height={200} alt="Background" />
       <hr />
         <VD2 />
     </>

@@ -53,7 +53,8 @@
 
 // export default App;
 import Bai2 from './components/Bai2';
-import Gallery,{Profile,Profile2} from './components/Gallery';
+//import Gallery,{Profile,Profile2} from './components/Gallery';
+import Gallery from './components/Gallery';
 import Header from './components/Header';
 import { Container }   from 'react-bootstrap';
 // import VD1 from "./components/VD1";
