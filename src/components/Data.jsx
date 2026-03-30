@@ -1,123 +1,123 @@
-export const books= [
+export const books = [
 
-    {
+  {
 
-      "id": 1,
+    "id": 1,
 
-      "title": "Clean Code",
+    "title": "Clean Code",
 
-      "author": "Robert C. Martin",
+    "author": "Robert C. Martin",
 
-      "category": "Programming",
+    "category": "Programming",
 
-      "availableCopies": 3,
+    "availableCopies": 3,
 
-      "totalCopies": 5,
+    "totalCopies": 5,
 
-      "rating": 4.8,
+    "rating": 4.8,
 
-      "image": "images/bg1.jpg"
+    "image": "image/image1.jpg"
 
-    },
+  },
 
-    {
+  {
 
-      "id": 2,
+    "id": 2,
 
-      "title": "The Pragmatic Programmer",
+    "title": "The Pragmatic Programmer",
 
-      "author": "Andrew Hunt",
+    "author": "Andrew Hunt",
 
-      "category": "Programming",
+    "category": "Programming",
 
-      "availableCopies": 1,
+    "availableCopies": 1,
 
-      "totalCopies": 3,
+    "totalCopies": 3,
 
-      "rating": 4.6,
+    "rating": 4.6,
 
-      "image": "images/bg2.jpg"
+    "image": "image/image.jpg"
 
-    },
+  },
 
-    {
+  {
 
-      "id": 3,
+    "id": 3,
 
-      "title": "Thinking, Fast and Slow",
+    "title": "Thinking, Fast and Slow",
 
-      "author": "Daniel Kahneman",
+    "author": "Daniel Kahneman",
 
-      "category": "Psychology",
+    "category": "Psychology",
 
-      "availableCopies": 2,
+    "availableCopies": 2,
 
-      "totalCopies": 2,
+    "totalCopies": 2,
 
-      "rating": 4.7,
+    "rating": 4.7,
 
-      "image": "images/bg3.jpg"
+    "image": "image/image1.jpg"
 
-    },
+  },
 
-    {
+  {
 
-      "id": 4,
+    "id": 4,
 
-      "title": "Design Patterns: OOP Software",
+    "title": "Design Patterns: OOP Software",
 
-      "author": "Erich Gamma",
+    "author": "Erich Gamma",
 
-      "category": "Software Engineering",
+    "category": "Software Engineering",
 
-      "availableCopies": 4,
+    "availableCopies": 4,
 
-      "totalCopies": 6,
+    "totalCopies": 6,
 
-      "rating": 4.5,
+    "rating": 4.5,
 
-      "image": "images/bg4.jpg"
+    "image": "image/image.jpg"
 
-    },
+  },
 
-    {
+  {
 
-      "id": 5,
+    "id": 5,
 
-      "title": "Introduction to Algorithms",
+    "title": "Introduction to Algorithms",
 
-      "author": "Thomas H. Cormen",
+    "author": "Thomas H. Cormen",
 
-      "category": "Algorithms",
+    "category": "Algorithms",
 
-      "availableCopies": 2,
+    "availableCopies": 2,
 
-      "totalCopies": 5,
+    "totalCopies": 5,
 
-      "rating": 4.3,
+    "rating": 4.3,
 
-      "image": "images/bg2.jpg"
+    "image": "image/image1.jpg"
 
-    },
+  },
 
-    {
+  {
 
-      "id": 6,
+    "id": 6,
 
-      "title": "Design of Existing Code",
+    "title": "Design of Existing Code",
 
-      "author": "Martin Fowler",
+    "author": "Martin Fowler",
 
-      "category": "Programming",
+    "category": "Programming",
 
-      "availableCopies": 5,
+    "availableCopies": 5,
 
-      "totalCopies": 5,
+    "totalCopies": 5,
 
-      "rating": 4.9,
+    "rating": 4.9,
 
-      "image": "images/bg3.jpg"
+    "image": "image/image.jpg"
 
-    }
+  }
 
-  ]
+]
