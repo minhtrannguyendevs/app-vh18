@@ -1,7 +1,8 @@
 import { books } from './Data';
 import { Card, Col, Row, Button, Form } from 'react-bootstrap';
-function book() {
-
+function Book() {
+    const categories = ["All Categories", ...new Set(books.map((b) => b.category))];
+    const authors = ["All Authors", ...new Set(books.map((b) => b.author))];
 
     return (
         <>
@@ -11,12 +12,19 @@ function book() {
             <Row >
                 <Col md={3}>
                     <Form.Select>
-                        <option>All Categories</option>
+                        {categories?.map((c) => (
+                            <option> {c}</option>
+                        ))}
                     </Form.Select>
                 </Col>
                 <Col md={3}>
                     <Form.Select>
-                        <option>Authors</option>
+                        {
+                            authors?.map((author) => (
+                                <option> {author}</option>
+                            ))
+
+                        }
                     </Form.Select>
                 </Col>
                 <Col md={6}>
@@ -60,4 +68,4 @@ function book() {
     );
 }
 
-export default book;
+export default Book;
