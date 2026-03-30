@@ -52,9 +52,16 @@
 // }
 
 // export default App;
+<<<<<<< HEAD
 // import Bai2 from './components/Bai2';
 // import Gallery,{Profile,Profile2} from './components/Gallery';
 // import Header from './components/Header';
+=======
+import Bai2 from './components/Bai2';
+//import Gallery,{Profile,Profile2} from './components/Gallery';
+import Gallery from './components/Gallery';
+import Header from './components/Header';
+>>>>>>> d1cbca6ed6955da93e04f7bf0653618140102a78
 import { Container }   from 'react-bootstrap';
 import Movie from './components/Movie';
 
