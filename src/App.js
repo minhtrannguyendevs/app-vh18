@@ -52,10 +52,12 @@
 // }
 
 // export default App;
-import Bai2 from './components/Bai2';
-import Gallery,{Profile,Profile2} from './components/Gallery';
-import Header from './components/Header';
+// import Bai2 from './components/Bai2';
+// import Gallery,{Profile,Profile2} from './components/Gallery';
+// import Header from './components/Header';
 import { Container }   from 'react-bootstrap';
+import Movie from './components/Movie';
+
 // import VD1 from "./components/VD1";
 // import VD2 from "./VD2";
 
@@ -63,9 +65,10 @@ function App() {
   return (
     <>
     <Container>
-      <Header/>
+      {/* <Header/>
       <Bai2/>
-      <Gallery/>
+      <Gallery/> */}
+      <Movie />
     </Container>
       
       {/* <Gallery/>
