@@ -20,7 +20,7 @@ export const Profile = () => {
 export const Profile2 = () => {
     return (
         <>
-            <img src="image/image1.jpg" width={250} height={200} alt="Background" />
+            <img src="image/book1.png" width={250} height={200} alt="Background" />
             <img src={images1} width={250} height={200} alt="Image 1" />
         </>
     );

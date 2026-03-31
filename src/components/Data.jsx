@@ -16,7 +16,7 @@ export const books = [
 
     "rating": 4.8,
 
-    "image": "image/image1.jpg"
+    "image": "image/images1.jpg"
 
   },
 
@@ -36,7 +36,7 @@ export const books = [
 
     "rating": 4.6,
 
-    "image": "image/image.jpg"
+    "image": "image/images2.jpg"
 
   },
 
@@ -56,7 +56,7 @@ export const books = [
 
     "rating": 4.7,
 
-    "image": "image/image1.jpg"
+    "image": "image/images3.jpg"
 
   },
 
@@ -76,7 +76,7 @@ export const books = [
 
     "rating": 4.5,
 
-    "image": "image/image.jpg"
+    "image": "image/images4.jpg"
 
   },
 
@@ -96,7 +96,7 @@ export const books = [
 
     "rating": 4.3,
 
-    "image": "image/image1.jpg"
+    "image": "image/images1.jpg"
 
   },
 
@@ -116,7 +116,7 @@ export const books = [
 
     "rating": 4.9,
 
-    "image": "image/image.jpg"
+    "image": "image/images2.jpg"
 
   }
 

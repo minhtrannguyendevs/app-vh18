@@ -46,7 +46,7 @@ function Book() {
                     books?.map((b) => (
                         <Col key={b.id} md={3}>
                             <Card>
-                                <Card.Img src={b.image} height={150} />
+                                <Card.Img src={b.image} height={180} />
                                 <Card.Body>
                                     <h4>{b.title}</h4>
                                     <hr />
