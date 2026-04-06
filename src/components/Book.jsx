@@ -1,8 +1,26 @@
 import { books } from './Data';
 import { Card, Col, Row, Button, Form } from 'react-bootstrap';
+import { useState } from 'react';
 function Book() {
+    const [selectedCategory, setSelectedCategory] = useState("All Categories");
+    const [selectedAuthor, setSelectedAuthor] = useState("All Authors");
+    const [search, setSearch] = useState("");
+
     const categories = ["All Categories", ...new Set(books.map((b) => b.category))];
     const authors = ["All Authors", ...new Set(books.map((b) => b.author))];
+
+    const handleCategoryChange = (e) => {
+        setSelectedCategory(e.target.value);
+    };
+
+    const handleAuthorChange = (e) => {
+        setSelectedAuthor(e.target.value);
+    };
+
+    const handleSearchChange = (e) => {
+        setSearch(e.target.value);
+    };
+
 
     return (
         <>
@@ -11,17 +29,18 @@ function Book() {
             </Row>
             <Row >
                 <Col md={3}>
-                    <Form.Select>
+                    <Form.Select
+                    value={selectedCategory} onChange={handleCategoryChange}>
                         {categories?.map((c) => (
-                            <option> {c}</option>
+                            <option key={c}> {c}</option>
                         ))}
                     </Form.Select>
                 </Col>
                 <Col md={3}>
-                    <Form.Select>
+                    <Form.Select value={selectedAuthor} onChange={handleAuthorChange}>
                         {
                             authors?.map((author) => (
-                                <option> {author}</option>
+                                <option key={author}> {author}</option>
                             ))
 
                         }
@@ -31,6 +50,8 @@ function Book() {
                     <Form.Control
                         type='search'
                         name='search'
+                        value={search}
+                        onChange={handleSearchChange}
                         placeholder='enter title to search' />
                 </Col>
 

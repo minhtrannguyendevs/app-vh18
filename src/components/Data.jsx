@@ -121,3 +121,36 @@ export const books = [
   }
 
 ]
+export const items = [
+
+    {
+
+        name: 'To Hai Ha',
+
+        gender: true,
+
+        image: 'image/book1.png'
+
+    },
+
+    {
+
+        name: 'Vu Nam Anh',
+
+        gender: true,
+
+        image: 'image/book2.png'
+
+    },
+
+    {
+
+        name: 'Lai thi teo',
+
+        gender: false,
+
+        image: 'image/book3.png'
+
+    }
+
+];

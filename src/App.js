@@ -61,9 +61,13 @@
 // import Gallery from './components/Gallery';
 // import Header from './components/Header';
 import { Container } from 'react-bootstrap';
-import Movie from './components/Movie';
+import  Hello  from './components/Hello';
+import Counter from './components/Counter';
+import Box from './components/Box';
+import Avatar from './components/Avatar';
+import { items } from './components/Data';
+// import Movie from './components/Movie';
 import Book from './components/Book';
-
 // import VD1 from "./components/VD1";
 // import VD2 from "./VD2";
 
@@ -71,19 +75,36 @@ function App() {
   return (
     <>
       <Container>
-        {/* <Header/>
-      <Bai2/>
-      <Gallery/> */}
-        <Movie />
-        <Book />
-      </Container>
+        <Book/>
+        <Counter />
+        <Box mau="red" rong="200px" cao="200px" />
+        <Box/>
+        <Box mau="green"  />
+        <Hello question="What is your name?" />
+        <Hello who='Tuan Anh' age='20' question ="What bro"  />
+        <hr/>
+        {
+          items.map((a,key) => (
+            <Avatar key={key}
+            name={a.name}
+            gender={a.gender}
+            image={a.image}
+            />
+          ))
 
-      {/* <Gallery/>
-      <Profile2/>
-      {/* <VD1/>
-      <hr/>
-      <VD2/> */}
+        }
+      </Container>
     </>
+    /* <Gallery/>
+    <Profile2/>
+    {/* <VD1/>
+    <hr/>   <Header/>
+    <Bai2/>
+    <Gallery/> 
+      <Movie />
+    / <Book />
+    <VD2/>/*/
+
   );
 }
 export default App;
