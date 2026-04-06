@@ -1,25 +1,34 @@
 import { books } from './Data';
 import { Card, Col, Row, Button, Form } from 'react-bootstrap';
 import { useState } from 'react';
+
 function Book() {
-    const [selectedCategory, setSelectedCategory] = useState("All Categories");
-    const [selectedAuthor, setSelectedAuthor] = useState("All Authors");
-    const [search, setSearch] = useState("");
+    const [choncategories,setchoncategories] = useState("All Categories");
+    const [chonauthors,setchonauthors] = useState("All Authors");
+    const [search,setsearch] = useState("");
 
     const categories = ["All Categories", ...new Set(books.map((b) => b.category))];
     const authors = ["All Authors", ...new Set(books.map((b) => b.author))];
 
-    const handleCategoryChange = (e) => {
-        setSelectedCategory(e.target.value);
-    };
+// const chonBook = choncategories === "All Categories" ? books : books.filter((b) => b.category === choncategories);
+const chonBooks = books.filter((b) => {
+    const matchCategory = choncategories === "All Categories" || b.category === choncategories;
+    const matchTitle = b.title.toLocaleLowerCase().includes(search.toLocaleLowerCase());
+    const matchAuthor = chonauthors === "All Authors" || b.author === chonauthors;
+    return matchCategory && matchTitle && matchAuthor;
+});
 
-    const handleAuthorChange = (e) => {
-        setSelectedAuthor(e.target.value);
-    };
+function handleCategories(e) {
+    setchoncategories(e.target.value);
+}
 
-    const handleSearchChange = (e) => {
-        setSearch(e.target.value);
-    };
+function handleAuthors(e) {
+    setchonauthors(e.target.value);
+}
+
+function handleSearch(e) {
+    setsearch(e.target.value);
+}
 
 
     return (
@@ -30,17 +39,17 @@ function Book() {
             <Row >
                 <Col md={3}>
                     <Form.Select
-                    value={selectedCategory} onChange={handleCategoryChange}>
+                    value={choncategories} onChange={handleCategories}>
                         {categories?.map((c) => (
-                            <option key={c}> {c}</option>
+                            <option> {c}</option>
                         ))}
                     </Form.Select>
                 </Col>
                 <Col md={3}>
-                    <Form.Select value={selectedAuthor} onChange={handleAuthorChange}>
+                    <Form.Select value={chonauthors} onChange={handleAuthors}>
                         {
                             authors?.map((author) => (
-                                <option key={author}> {author}</option>
+                                <option> {author}</option>
                             ))
 
                         }
@@ -50,9 +59,9 @@ function Book() {
                     <Form.Control
                         type='search'
                         name='search'
+                        placeholder='enter title to search'
                         value={search}
-                        onChange={handleSearchChange}
-                        placeholder='enter title to search' />
+                        onChange={handleSearch} />
                 </Col>
 
 
@@ -64,7 +73,7 @@ function Book() {
             </Row>
             <Row>
                 {
-                    books?.map((b) => (
+                    chonBooks?.map((b) => (
                         <Col key={b.id} md={3}>
                             <Card>
                                 <Card.Img src={b.image} height={180} />
