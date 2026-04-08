@@ -3,32 +3,32 @@ import { Card, Col, Row, Button, Form } from 'react-bootstrap';
 import { useState } from 'react';
 
 function Book() {
-    const [choncategories,setchoncategories] = useState("All Categories");
-    const [chonauthors,setchonauthors] = useState("All Authors");
-    const [search,setsearch] = useState("");
+    const [choncategories, setchoncategories] = useState("All Categories");
+    const [chonauthors, setchonauthors] = useState("All Authors");
+    const [search, setsearch] = useState("");
 
     const categories = ["All Categories", ...new Set(books.map((b) => b.category))];
     const authors = ["All Authors", ...new Set(books.map((b) => b.author))];
 
-// const chonBook = choncategories === "All Categories" ? books : books.filter((b) => b.category === choncategories);
-const chonBooks = books.filter((b) => {
-    const matchCategory = choncategories === "All Categories" || b.category === choncategories;
-    const matchTitle = b.title.toLocaleLowerCase().includes(search.toLocaleLowerCase());
-    const matchAuthor = chonauthors === "All Authors" || b.author === chonauthors;
-    return matchCategory && matchTitle && matchAuthor;
-});
+    // const chonBook = choncategories === "All Categories" ? books : books.filter((b) => b.category === choncategories);
+    const chonBooks = books.filter((b) => {
+        const matchCategory = choncategories === "All Categories" || b.category === choncategories;
+        const matchTitle = b.title.toLocaleLowerCase().includes(search.toLocaleLowerCase());
+        const matchAuthor = chonauthors === "All Authors" || b.author === chonauthors;
+        return matchCategory && matchTitle && matchAuthor;
+    });
 
-function handleCategories(e) {
-    setchoncategories(e.target.value);
-}
+    function handleCategories(e) {
+        setchoncategories(e.target.value);
+    }
 
-function handleAuthors(e) {
-    setchonauthors(e.target.value);
-}
+    function handleAuthors(e) {
+        setchonauthors(e.target.value);
+    }
 
-function handleSearch(e) {
-    setsearch(e.target.value);
-}
+    function handleSearch(e) {
+        setsearch(e.target.value);
+    }
 
 
     return (
@@ -39,7 +39,7 @@ function handleSearch(e) {
             <Row >
                 <Col md={3}>
                     <Form.Select
-                    value={choncategories} onChange={handleCategories}>
+                        value={choncategories} onChange={handleCategories}>
                         {categories?.map((c) => (
                             <option> {c}</option>
                         ))}

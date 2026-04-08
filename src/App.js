@@ -1,25 +1,62 @@
-// // import logo from './logo.svg';
-// // import './App.css';
+import { Container } from 'react-bootstrap';
+import Hello from './components/Hello';
+import Counter from './components/Counter';
+import Box from './components/Box';
+import Avatar from './components/Avatar';
+import { items } from './components/Data';
+import Book from './components/Book';
+
+function App() {
+  return (
+    <>
+      <Container>
+        <Book />
+        <Counter />
+        <Box mau="red" rong="200px" cao="200px" />
+        <Box />
+        <Box mau="green" />
+        <Hello question="What is your name?" />
+        <Hello who='Tuan Anh' age='20' question="What bro" />
+        <hr />
+        {
+          items.map((a, key) => (
+            <Avatar key={key}
+              name={a.name}
+              gender={a.gender}
+              image={a.image}
+            />
+          ))
+        }
+      </Container>
+    </>
+  );
+}
+export default App;
+
+
+
+// import logo from './logo.svg';
+// import './App.css';
 // import List from './components/List';
 
 // function App() {
 //   return (
-//     // <div className="App">
-//     //   <header className="App-header">
-//     //     <img src={logo} className="App-logo" alt="logo" />
-//     //     <p>
-//     //       Edit <code>src/App.js</code> and save to reload.
-//     //     </p>
-//     //     <a
-//     //       className="App-link"
-//     //       href="https://reactjs.org"
-//     //       target="_blank"
-//     //       rel="noopener noreferrer"
-//     //     >
-//     //       Learn React
-//     //     </a>
-//     //   </header>
-//     // </div>
+//      <div className="App">
+//        <header className="App-header">
+//          <img src={logo} className="App-logo" alt="logo" />
+//         <p>
+//       Edit <code>src/App.js</code> and save to reload.
+//         </p>
+//        <a
+//           className="App-link"
+//           href="https://reactjs.org"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           Learn React
+//         </a>
+//       </header>
+//     </div>
 
 
 //     <>
@@ -51,60 +88,53 @@
 //   );
 // }
 
-// export default App;
+//  export default App;
 
 // import Bai2 from './components/Bai2';
-// import Gallery,{Profile,Profile2} from './components/Gallery';
-// import Header from './components/Header';
-// import Bai2 from './components/Bai2';
-// import Gallery,{Profile,Profile2} from './components/Gallery';
 // import Gallery from './components/Gallery';
 // import Header from './components/Header';
-import { Container } from 'react-bootstrap';
-import  Hello  from './components/Hello';
-import Counter from './components/Counter';
-import Box from './components/Box';
-import Avatar from './components/Avatar';
-import { items } from './components/Data';
+// import { Container } from 'react-bootstrap';
+// import Hello from './components/Hello';
+// import Counter from './components/Counter';
+// import Box from './components/Box';
+// import Avatar from './components/Avatar';
+// import { items } from './components/Data';
 // import Movie from './components/Movie';
-import Book from './components/Book';
+// import Book from './components/Book';
 // import VD1 from "./components/VD1";
 // import VD2 from "./VD2";
 
-function App() {
-  return (
-    <>
-      <Container>
-        <Book/>
-        <Counter />
-        <Box mau="red" rong="200px" cao="200px" />
-        <Box/>
-        <Box mau="green"  />
-        <Hello question="What is your name?" />
-        <Hello who='Tuan Anh' age='20' question ="What bro"  />
-        <hr/>
-        {
-          items.map((a,key) => (
-            <Avatar key={key}
-            name={a.name}
-            gender={a.gender}
-            image={a.image}
-            />
-          ))
-
-        }
-      </Container>
-    </>
-    /* <Gallery/>
-    <Profile2/>
-    {/* <VD1/>
-    <hr/>   <Header/>
-    <Bai2/>
-    <Gallery/> 
-      <Movie />
-    / <Book />
-    <VD2/>/*/
-
-  );
-}
-export default App;
+// function App() {
+//   return (
+//     <>
+//       <Container>
+//         <Book />
+//         <Counter />
+//         <Box mau="red" rong="200px" cao="200px" />
+//         <Box />
+//         <Box mau="green" />
+//         <Hello question="What is your name?" />
+//         <Hello who="Tuan Anh" age="20" question="What bro" />
+//         <hr />
+//         {
+//           items.map((a, key) => (
+//             <Avatar key={key}
+//               name={a.name}
+//               gender={a.gender}
+//               image={a.image}
+//             />
+//           ))
+//         }
+//       </Container>
+//       <Gallery />
+//       <VD1 />
+//       <hr />
+//       <Header />
+//       <Bai2 />
+//       <Movie />
+//       <Book />
+//       <VD2 />
+//     </>
+//   );
+// }
+// export default App;
