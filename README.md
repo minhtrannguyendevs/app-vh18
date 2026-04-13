@@ -3,13 +3,13 @@ git clone \
 Cd app-vh18\
 npm i\
 npm i react-router-dom\
-npm start\
+npm start
 
-git pull\
+git pull
 
 git add . \
 git commit -m "asdad was "\
-git push origin main \
+git push origin main 
 
 # Getting Started with Create React App
 
