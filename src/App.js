@@ -5,12 +5,14 @@ import Box from './components/Box';
 import Avatar from './components/Avatar';
 import { items } from './components/Data';
 import Book from './components/Book';
+import Vidu2 from './components/Vidu2';
+import Vidu3 from './components/ViDu3';
 
 function App() {
   return (
     <>
       <Container>
-        <Book />
+        {/* <Book />
         <Counter />
         <Box mau="red" rong="200px" cao="200px" />
         <Box />
@@ -26,7 +28,8 @@ function App() {
               image={a.image}
             />
           ))
-        }
+        } */}
+        <Vidu3 /> 
       </Container>
     </>
   );
