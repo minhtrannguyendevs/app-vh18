@@ -1,3 +1,16 @@
+# Vô lấy thì +1 follow 
+git clone
+Cd app-vh18
+npm i
+npm i react-router-dom
+npm start
+
+git pull
+
+git add .
+git commit -m "asdad was "
+git push origin main 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
